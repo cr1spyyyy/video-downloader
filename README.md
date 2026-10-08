@@ -1,6 +1,6 @@
 # Video Downloader 
 
-Aplikacja webowa umożliwiająca pobieranie materiałów wideo z ponad 1800 serwisów (m.in. YouTube, X/Twitter, TikTok) wraz z podglądem wybranych metadanych (tytuł, czas, autor). Projekt działa na bazie **FastAPI**, **yt-dlp** oraz **FFmpeg** po stronie backendu oraz interfejsu w **React (TypeScript, Vite, Tailwind CSS)**, wykorzystując silnik `yt-dlp` do dynamicznego parsowania i strumieniowania plików multimedialnych.
+Aplikacja webowa umożliwiająca pobieranie materiałów wideo z ponad 1800 serwisów (m.in. YouTube, X/Twitter, TikTok) wraz z podglądem wybranych metadanych (tytuł, czas, autor). Projekt działa na bazie **FastAPI**, **yt-dlp** oraz **FFmpeg** po stronie backendu oraz interfejsu w **React (TypeScript, Vite, Tailwind CSS)**, wykorzystując silnik `yt-dlp` do parsowania i strumieniowania plików multimedialnych.
 
 ---
 
