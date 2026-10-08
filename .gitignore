@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# Node / React
+node_modules/
+.pnp
+.pnp.js
+coverage
+dist/
+build/
+
+# pliki wideo
+downloads/
+*.mp4
+*.mkv
+*.webm
+*.mp3
+
+# VS Code & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker / Logi
+*.log
+.docker/
