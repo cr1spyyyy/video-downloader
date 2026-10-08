@@ -1,0 +1,14 @@
+services:
+  backend:
+    image: cr1spyyyy/video-downloader-backend:lates
+    ports:
+      - "8000:8000"
+    restart: always
+
+  frontend:
+    image: cr1spyyyy/video-downloader-frontend:lates
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: always
