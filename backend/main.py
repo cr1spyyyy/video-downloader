@@ -72,6 +72,29 @@ def download_video(video_request: VideoRequest):
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"BŁAD: {str(e)}")
 
+@app.get("/api/supported-sites")
+def get_supported_sites():
+    """
+    Zwraca listę obsługiwanych stron.
+    """
+    extractors = yt_dlp.extractor.list_extractors()
+
+    try:
+        sites_set = set()
+        for e in extractors:
+            if hasattr(e, 'IE_NAME'):
+                base_name = e.IE_NAME.split(':')[0]
+                sites_set.add(base_name)
+
+        sorted_sites = sorted(sites_set)
+
+        return {
+            "supported_sites": sorted_sites,
+                "total_sites": len(sorted_sites)
+                }
+    
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"BŁAD: {str(e)}")
 
 if __name__ == "__main__":
         import uvicorn
